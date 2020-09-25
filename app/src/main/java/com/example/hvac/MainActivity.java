@@ -1,0 +1,44 @@
+package com.example.hvac;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
+    private Button button;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        //getWindow().setFlags(windowManager, ActionBar.LayoutParams,FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        setContentView(R.layout.activity_main);
+        button = (Button) findViewById(R.id.get_started);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openadmin_user();
+
+            }
+
+        });
+
+    }
+
+    private void openadmin_user() {
+        Intent intent = new Intent(this, admin_user.class);
+        startActivity(intent);
+
+
+    }
+
+
+
+}
+
