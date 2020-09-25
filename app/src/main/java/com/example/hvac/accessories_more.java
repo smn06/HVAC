@@ -10,6 +10,9 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -39,15 +42,20 @@ public class accessories_more extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference acc=database.getReference("TV");
+
+
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(accessories_more.this);
                 builder.setTitle(">>>>>>>!!!!Information!!!!<<<<<<<");
                 if(tv==0) {
-
+                    acc.setValue("TV is on");
                     builder.setMessage(R.string.tv_mes);
                     tv = 1;
                 }
                 else{
+                    acc.setValue("TV is off");
                     builder.setMessage("TV is off");
                     tv=0;
                 }
@@ -76,14 +84,22 @@ public class accessories_more extends AppCompatActivity {
             public void onClick(View view) {
 
 
+
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference acc=database.getReference("Oven");
+
+
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(accessories_more.this);
                 builder.setTitle(">>>>>>>!!!!Information!!!!<<<<<<<");
                 if(oven==0) {
+                    acc.setValue("Oven is On");
 
                     builder.setMessage(R.string.oven_mes);
                     oven = 1;
                 }
                 else{
+                    acc.setValue("Oven is Off");
                     builder.setMessage("Oven is off");
                     oven=0;
                 }
@@ -113,14 +129,21 @@ public class accessories_more extends AppCompatActivity {
 
 
 
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference acc=database.getReference("Printer");
+
+
+
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(accessories_more.this);
                 builder.setTitle(">>>>>>>!!!!Information!!!!<<<<<<<");
                 if(printer==0) {
-
+                    acc.setValue("Printer is On");
                     builder.setMessage(R.string.print_mes);
                     printer = 1;
                 }
                 else{
+                    acc.setValue("Printer is Off");
                     builder.setMessage("Printer is off");
                     printer=0;
                 }
@@ -148,15 +171,20 @@ public class accessories_more extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference acc=database.getReference("Alexa");
+
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(accessories_more.this);
                 builder.setTitle(">>>>>>>!!!!Information!!!!<<<<<<<");
                 if(alexa==0) {
-
+                    acc.setValue("Alexa is On");
                     builder.setMessage(R.string.alex_mes);
                     alexa = 1;
                 }
                 else{
+
+                    acc.setValue("Alexa is Off");
                     builder.setMessage("Alexa is off");
                     alexa=0;
                 }
@@ -185,14 +213,19 @@ public class accessories_more extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference acc=database.getReference("Blender");
+
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(accessories_more.this);
                 builder.setTitle(">>>>>>>!!!!Information!!!!<<<<<<<");
                 if(blen==0) {
-
+                    acc.setValue("Blender is On");
                     builder.setMessage(R.string.blen_mes);
                     blen = 1;
                 }
                 else{
+                    acc.setValue("Blender is Off");
                     builder.setMessage("Blender is off");
                     blen=0;
                 }

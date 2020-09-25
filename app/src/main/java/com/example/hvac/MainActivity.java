@@ -8,6 +8,9 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class MainActivity extends AppCompatActivity {
     private Button button;
 
@@ -23,6 +26,11 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+//                FirebaseDatabase database=FirebaseDatabase.getInstance();
+//                DatabaseReference myref=database.getReference("Temp");
+//
+//                myref.setValue("Heleelo");
+
                 openadmin_user();
 
             }

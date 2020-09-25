@@ -7,10 +7,16 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -20,6 +26,7 @@ public class psi_read extends AppCompatActivity {
     private TextView ho;
     private Button aut,man,reb;
     int a=0,m=0;
+    private TextView ed1,ed2,ed3,ed4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,12 +43,93 @@ public class psi_read extends AppCompatActivity {
         man=(Button)findViewById(R.id.manual);
         reb=(Button)findViewById(R.id.reboot);
 
+        ed1=(TextView)findViewById(R.id.edit1);
+        ed2=(TextView)findViewById(R.id.edit2);
+        ed3=(TextView)findViewById(R.id.edit3);
+        ed4=(TextView)findViewById(R.id.edit4);
+
+
+
+
+        FirebaseDatabase database=FirebaseDatabase.getInstance();
+        DatabaseReference p1=database.getReference("PSI 1");
+        p1.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                String s= (String) snapshot.getValue();
+                ed1.setText(""+s);
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+
+        DatabaseReference p2=database.getReference("PSI 2");
+        p2.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                String s= (String) snapshot.getValue();
+                ed2.setText(""+s);
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+        DatabaseReference p3=database.getReference("PSI 3");
+        p3.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                String s= (String) snapshot.getValue();
+                ed3.setText(""+s);
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+
+        DatabaseReference p4=database.getReference("PSI 4");
+        p4.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                String s= (String) snapshot.getValue();
+                ed4.setText(""+s);
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+
+
+
+
+
 
 
 
         reb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference psi=database.getReference("Reboot PSI");
+                psi.setValue("Rebooting Whole System");
+
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(psi_read.this);
                 builder.setTitle(">>>>>>>!!!!WARNING!!!!<<<<<<<<");
@@ -71,14 +159,23 @@ public class psi_read extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference psi=database.getReference("PSI Read");
+
+
+
+
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(psi_read.this);
                 builder.setTitle(">>>>>>>!!!!WARNING!!!!<<<<<<<<");
                 if(m==0) {
-
+                    psi.setValue("Manual Supply Activated");
                     builder.setMessage(R.string.man_mes);
                     m = 1;
                 }
                 else{
+                    psi.setValue("Manual Supply Deactivated");
+
                     builder.setMessage("Manual Supply Deactivated");
                     m=0;
                 }
@@ -107,14 +204,20 @@ public class psi_read extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference psi=database.getReference("PSI Auto Read");
+
+
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(psi_read.this);
                 builder.setTitle(">>>>>>>!!!!WARNING!!!!<<<<<<<<");
                 if(a==0) {
-
+                    psi.setValue("Auto Supply Activated");
                     builder.setMessage(R.string.auto_mes);
                     a = 1;
                 }
                 else{
+                    psi.setValue("Auto Supply Deactivated");
                     builder.setMessage("Auto Supply Deactivated");
                     a=0;
                 }

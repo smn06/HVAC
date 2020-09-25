@@ -3,7 +3,7 @@
     <string name="game_message">shsss</string>
     <string name="message">Temperature will change to low in 2s</string>
     <string name="reboot_message">Rebooting whole system in 2s</string>
-    <string name="turbo_message">Turbo speed is turning on in 2s</string>
+    <string name="turbo_message">Turbo cooling is turning on in 2s</string>
     <string name="light_mes">Light is on</string>
     <string name="fan_mes">Fan is on</string>
     <string name="fridge_mes">Fridge is on</string>
@@ -17,13 +17,17 @@
     <string name="oven_mes">Oven is on</string>
     <string name="sc_mes">Schedule Supply Activated</string>
     <string name="res_mes">Resolution is set to HIGH</string>
-    <string name="n_mes">Night mode Activated</string>
+    <string name="n_mes">Nightmode Activated</string>
     <string name="auto_mes">Auto Supply Activated</string>
     <string name="tur_m">Turbo mode Activated</string>
     <string name="man_m">Manual mode Activated</string>
     <string name="auto_m">Auto mode Activated</string>
     <string name="low_m">Low mode Activated</string>
     <string name="man_mes">Manual Supply Activated</string>
+    <string name="turbo_m">Turbo RPM is turning on in 2s</string>
+    <string name="aut_m">Auto RPM is turning on in 2s</string>
+    <string name="manual_m">Manual RPM is turning on in 2s</string>
+    <string name="lo_m">Low RPM is turning on in 2s</string>
 
 
 </resources>

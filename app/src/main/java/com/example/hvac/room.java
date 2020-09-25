@@ -15,6 +15,7 @@ public class room extends AppCompatActivity {
     private TextView back;
     private Button ex;
     private Button add;
+    private Button all;
 
 
 
@@ -34,6 +35,26 @@ public class room extends AppCompatActivity {
         back=(TextView)findViewById(R.id.back);
 
         add=(Button)findViewById(R.id.add_device);
+        all=(Button)findViewById(R.id.connected);
+
+
+        all.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openall_device();
+            }
+        });
+
+
+
+
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openadd_device();
+            }
+        });
+
 
 //        add.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -75,6 +96,19 @@ public class room extends AppCompatActivity {
 
             }
         });
+
+    }
+
+    private void openall_device() {
+        Intent intent=new Intent(this,all_device.class);
+        startActivity(intent);
+    }
+
+    private void openadd_device() {
+
+        Intent intent=new Intent(this,add_device.class);
+        startActivity(intent);
+
 
     }
 

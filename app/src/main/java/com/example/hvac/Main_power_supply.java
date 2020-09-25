@@ -12,6 +12,8 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -59,6 +61,13 @@ public class Main_power_supply extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+
+
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference power=database.getReference("Main Power");
+                power.setValue("Main Power Supply is off");
+
+
                 AlertDialog.Builder temp1= new AlertDialog.Builder(Main_power_supply.this);
                 temp1.setTitle(">>>>>>>!!!!Information!!!!<<<<<<<");
                 temp1.setMessage("Power Supply is Off");
@@ -80,6 +89,11 @@ public class Main_power_supply extends AppCompatActivity {
         on.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference power=database.getReference("Main Power");
+                power.setValue("Main Power Supply is on");
 
                 AlertDialog.Builder temp= new AlertDialog.Builder(Main_power_supply.this);
                 temp.setTitle(">>>>>>>!!!!Information!!!!<<<<<<<");
@@ -103,14 +117,20 @@ public class Main_power_supply extends AppCompatActivity {
             public void onClick(View view) {
 
 
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference power=database.getReference("Schedule Power");
+                power.setValue("Main Power Supply is off");
+
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(Main_power_supply.this);
                 builder.setTitle(">>>>>>>!!!!Information!!!!<<<<<<<");
                 if(supply==0) {
-
+                    power.setValue("Schedule Supply Activated");
                     builder.setMessage(R.string.sc_mes);
                     supply = 1;
                 }
                 else{
+                    power.setValue("Schedule Supply Activated");
                     builder.setMessage("Schedule Supply Deactivated");
                     supply=0;
                 }

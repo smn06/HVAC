@@ -12,6 +12,8 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -53,6 +55,11 @@ public class floortofloor extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference water=database.getReference("Water Supply");
+                water.setValue("Water Supply is off");
+
                 AlertDialog.Builder temp1= new AlertDialog.Builder(floortofloor.this);
                 temp1.setTitle(">>>>>>>!!!!Information!!!!<<<<<<<");
                 temp1.setMessage("Water Supply is Off");
@@ -74,6 +81,11 @@ public class floortofloor extends AppCompatActivity {
         on.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference water=database.getReference("Water Supply");
+                water.setValue("Water Supply is on");
 
             AlertDialog.Builder temp= new AlertDialog.Builder(floortofloor.this);
             temp.setTitle(">>>>>>>!!!!Information!!!!<<<<<<<");
@@ -97,14 +109,21 @@ public class floortofloor extends AppCompatActivity {
             public void onClick(View view) {
 
 
+
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference water=database.getReference("Water Schedule");
+
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(floortofloor.this);
                 builder.setTitle(">>>>>>>!!!!Information!!!!<<<<<<<");
                 if(supply==0) {
+                    water.setValue("Schedule Supply Activated");
 
                     builder.setMessage(R.string.sc_mes);
                     supply = 1;
                 }
                 else{
+                    water.setValue("Schedule Supply Deativated");
                     builder.setMessage("Schedule Supply Deactivated");
                     supply=0;
                 }

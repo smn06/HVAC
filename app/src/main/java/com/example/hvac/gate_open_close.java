@@ -12,6 +12,8 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -58,6 +60,12 @@ public class gate_open_close extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+
+
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference sec=database.getReference("Security");
+                sec.setValue("Rebooting Security System");
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(gate_open_close.this);
                 builder.setTitle(">>>>>>>!!!!WARNING!!!!<<<<<<<<");
                 builder.setMessage(R.string.reboot_message);
@@ -91,14 +99,22 @@ public class gate_open_close extends AppCompatActivity {
             public void onClick(View view) {
 
 
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference sec=database.getReference("Security Nightmode");
+
+
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(gate_open_close.this);
                 builder.setTitle(">>>>>>>!!!!WARNING!!!!<<<<<<<<");
                 if(n==0) {
+
+                    sec.setValue("Nightmode Activated");
 
                     builder.setMessage(R.string.n_mes);
                     n = 1;
                 }
                 else{
+                    sec.setValue("Nightmode Deactivated");
                     builder.setMessage("Nightmode Deactivated");
                     n=0;
                 }
@@ -125,15 +141,22 @@ public class gate_open_close extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference sec=database.getReference("Security CamRes");
+
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(gate_open_close.this);
                 builder.setTitle(">>>>>>>!!!!WARNING!!!!<<<<<<<<");
                 if(resol==0) {
 
+                    sec.setValue("Resolution is set to High");
+
                     builder.setMessage(R.string.res_mes);
                     resol = 1;
                 }
                 else{
+
+                    sec.setValue("Resolution is set to Normal");
                     builder.setMessage("Resolution is set to Normal");
                     resol=0;
                 }
@@ -163,10 +186,16 @@ public class gate_open_close extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference sec=database.getReference("Security Gate");
+                sec.setValue("Gate is Close");
+
+
+
 
                 AlertDialog.Builder temp2= new AlertDialog.Builder(gate_open_close.this);
                 temp2.setTitle(">>>>>>>!!!!Information!!!!<<<<<<<");
-                temp2.setMessage("Gate is Off");
+                temp2.setMessage("Gate is Close");
                 temp2.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -184,6 +213,11 @@ public class gate_open_close extends AppCompatActivity {
         open.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference sec=database.getReference("Security Gate");
+                sec.setValue("Gate is Open");
 
 
                 AlertDialog.Builder temp1= new AlertDialog.Builder(gate_open_close.this);

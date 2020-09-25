@@ -11,6 +11,8 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -45,14 +47,21 @@ public class mode extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference room=database.getReference("Room Temp");
+
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(mode.this);
                 builder.setTitle(">>>>>>>!!!!WARNING!!!!<<<<<<<<");
                 if(t==0) {
+                    room.setValue("Turbo Mode Activated");
 
                     builder.setMessage(R.string.tur_m);
                     t = 1;
                 }
                 else{
+
+                    room.setValue("Turbo Mode Deactivated");
                     builder.setMessage("Turbo mode Deactivated");
                     t=0;
                 }
@@ -81,14 +90,21 @@ public class mode extends AppCompatActivity {
             public void onClick(View view) {
 
 
+
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference room=database.getReference("Temp Manual");
+
+
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(mode.this);
                 builder.setTitle(">>>>>>>!!!!WARNING!!!!<<<<<<<<");
                 if(m==0) {
-
+                    room.setValue("Manual Mode Activated");
                     builder.setMessage(R.string.man_m);
                     m = 1;
                 }
                 else{
+                    room.setValue("Manual Mode Deactivated");
                     builder.setMessage("Manual mode Deactivated");
                     m=0;
                 }
@@ -116,14 +132,22 @@ public class mode extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference room=database.getReference("Temp Auto");
+
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(mode.this);
                 builder.setTitle(">>>>>>>!!!!WARNING!!!!<<<<<<<<");
                 if(a==0) {
+
+                    room.setValue("Auto Mode Activated");
 
                     builder.setMessage(R.string.auto_m);
                     a = 1;
                 }
                 else{
+                    room.setValue("Auto Mode Activated");
                     builder.setMessage("Auto mode Deactivated");
                     a=0;
                 }
@@ -152,15 +176,22 @@ public class mode extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference room=database.getReference("Temp Low");
+
+
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(mode.this);
                 builder.setTitle(">>>>>>>!!!!WARNING!!!!<<<<<<<<");
                 if(l==0) {
 
+                    room.setValue("Low Mode Activated");
+
                     builder.setMessage(R.string.low_m);
                     l = 1;
                 }
                 else{
+                    room.setValue("Low Mode Activated");
                     builder.setMessage("Low mode Deactivated");
                     l=0;
                 }

@@ -15,6 +15,9 @@ public class security extends AppCompatActivity {
     private TextView ex;
     private TextView back;
     private Button s;
+    private Button per;
+    private Button f;
+    private Button cc;
 
 
 
@@ -29,6 +32,41 @@ public class security extends AppCompatActivity {
         ex=(TextView) findViewById(R.id.log);
         back=(TextView)findViewById(R.id.back);
         s=(Button)findViewById(R.id.settings);
+
+        per=(Button)findViewById(R.id.person);
+
+        f=(Button)findViewById(R.id.face);
+
+        cc=(Button)findViewById(R.id.cc) ;
+
+
+        cc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                opencamera();
+            }
+        });
+
+
+
+
+
+
+
+        f.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openimage();
+            }
+        });
+
+
+        per.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openperson_counter();
+            }
+        });
 
 
         s.setOnClickListener(new View.OnClickListener() {
@@ -54,6 +92,26 @@ public class security extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    private void opencamera() {
+        Intent intent=new Intent(this, camera.class);
+        startActivity(intent);
+    }
+
+
+    private void openimage() {
+
+        Intent intent=new Intent(this,image.class);
+        startActivity(intent);
+
+    }
+
+    private void openperson_counter() {
+        Intent intent=new Intent(this,person_counter.class);
+        startActivity(intent);
+
+
     }
 
     private void opengate_open_close() {

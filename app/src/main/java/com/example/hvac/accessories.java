@@ -11,6 +11,8 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -45,15 +47,20 @@ public class accessories extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference acc=database.getReference("Light");
+
+
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(accessories.this);
                 builder.setTitle(">>>>>>>!!!!Information!!!!<<<<<<<");
                 if(light==0) {
-
+                    acc.setValue("Light is on");
                     builder.setMessage(R.string.light_mes);
                     light = 1;
                 }
                 else{
+                    acc.setValue("Light is off");
                     builder.setMessage("Light is off");
                     light=0;
                 }
@@ -79,14 +86,21 @@ public class accessories extends AppCompatActivity {
             public void onClick(View view) {
 
 
+
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference acc=database.getReference("Fan");
+
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(accessories.this);
                 builder.setTitle(">>>>>>>!!!!Information!!!!<<<<<<<");
                 if(fan==0) {
-
+                    acc.setValue("Fan is on");
                     builder.setMessage(R.string.fan_mes);
                     fan = 1;
                 }
                 else{
+
+                    acc.setValue("Fan is off");
                     builder.setMessage("Fan is off");
                     fan=0;
                 }
@@ -112,14 +126,21 @@ public class accessories extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference acc=database.getReference("Heater");
+                acc.setValue("Heater is off");
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(accessories.this);
                 builder.setTitle(">>>>>>>!!!!Information!!!!<<<<<<<");
                 if(heater==0) {
+                    acc.setValue("Heater is on");
 
                     builder.setMessage(R.string.heater_mes);
                     heater = 1;
                 }
                 else{
+
+                    acc.setValue("Heater is off");
                     builder.setMessage("Heater is off");
                     heater=0;
                 }
@@ -147,14 +168,21 @@ public class accessories extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+
+
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference acc=database.getReference("Fridge");
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(accessories.this);
                 builder.setTitle(">>>>>>>!!!!Information!!!!<<<<<<<");
                 if(fri==0) {
+                    acc.setValue("Fridge is on");
 
                     builder.setMessage(R.string.fridge_mes);
                     fri = 1;
                 }
                 else{
+                    acc.setValue("Fridge is off");
                     builder.setMessage("Fridge is off");
                     fri=0;
                 }
@@ -184,14 +212,21 @@ public class accessories extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+
+
+                FirebaseDatabase database=FirebaseDatabase.getInstance();
+                DatabaseReference acc=database.getReference("AC");
+
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(accessories.this);
                 builder.setTitle(">>>>>>>!!!!Information!!!!<<<<<<<");
                 if(ac==0) {
-
+                    acc.setValue("AC is on");
                     builder.setMessage(R.string.ac_mes);
                     ac = 1;
                 }
                 else{
+                    acc.setValue("AC is off");
                     builder.setMessage("AC is off");
                     ac=0;
                 }
