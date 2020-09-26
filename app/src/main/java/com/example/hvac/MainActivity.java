@@ -26,10 +26,6 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                FirebaseDatabase database=FirebaseDatabase.getInstance();
-//                DatabaseReference myref=database.getReference("Temp");
-//
-//                myref.setValue("Heleelo");
 
                 openadmin_user();
 

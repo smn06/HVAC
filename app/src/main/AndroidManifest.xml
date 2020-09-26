@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -14,12 +15,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".camera"></activity>
+        <activity android:name=".sakib"></activity>
+        <activity android:name=".camera" />
         <activity android:name=".image" />
         <activity android:name=".add_device" />
         <activity android:name=".all_device" />
-        <activity android:name=".person_counter" />
-        <activity android:name=".wifi" />
+        <activity android:name=".person_counter" /> <!-- <activity android:name=".wifi" /> -->
         <activity android:name=".user_emergency" />
         <activity android:name=".splash">
             <intent-filter>

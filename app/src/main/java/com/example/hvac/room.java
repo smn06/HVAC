@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class room extends AppCompatActivity {
     private Button room;
     private Button swich;
@@ -16,6 +18,7 @@ public class room extends AppCompatActivity {
     private Button ex;
     private Button add;
     private Button all;
+    private TextView lo;
 
 
 
@@ -36,6 +39,18 @@ public class room extends AppCompatActivity {
 
         add=(Button)findViewById(R.id.add_device);
         all=(Button)findViewById(R.id.connected);
+
+        lo=(TextView)findViewById(R.id.log);
+
+
+        lo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(getApplicationContext(),admin_user.class));
+                finish();
+            }
+        });
 
 
         all.setOnClickListener(new View.OnClickListener() {

@@ -17,7 +17,7 @@ public class security extends AppCompatActivity {
     private Button s;
     private Button per;
     private Button f;
-    private Button cc;
+    private Button cc,mo,re;
 
 
 
@@ -39,6 +39,25 @@ public class security extends AppCompatActivity {
 
         cc=(Button)findViewById(R.id.cc) ;
 
+
+
+        mo=(Button)findViewById(R.id.motion);
+        re=(Button)findViewById(R.id.recordings);
+
+
+        mo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                opencamera();
+            }
+        });
+
+        re.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                opencamera();
+            }
+        });
 
         cc.setOnClickListener(new View.OnClickListener() {
             @Override

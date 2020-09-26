@@ -28,15 +28,17 @@ public class user_emergency extends AppCompatActivity {
         ho.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openadmin_user();
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(getApplicationContext(),admin_user.class));
+                finish();
+
+
             }
         });
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent(getApplicationContext(),admin_user.class));
-                finish();
+                openroom();
             }
         });
     }

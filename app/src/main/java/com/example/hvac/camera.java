@@ -19,6 +19,7 @@ import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.WindowManager;
 
 public class camera extends AppCompatActivity {
     public RecyclerView MrecyclerView;
@@ -32,6 +33,9 @@ public class camera extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         MrecyclerView = findViewById(R.id.recyclerview_video);
         MrecyclerView.setHasFixedSize(true);
         MrecyclerView.setLayoutManager(new LinearLayoutManager(this));

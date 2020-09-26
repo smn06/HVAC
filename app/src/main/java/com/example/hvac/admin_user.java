@@ -22,6 +22,8 @@ public class admin_user extends AppCompatActivity {
 
 
         setContentView(R.layout.activity_admin_user);
+
+
         button= (Button) findViewById(R.id.Admin);
         button1=(Button) findViewById(R.id.user);
         back=(TextView) findViewById(R.id.back);
