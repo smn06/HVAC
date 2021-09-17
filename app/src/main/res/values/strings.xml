@@ -28,7 +28,6 @@
     <string name="aut_m">Auto RPM is turning on in 2s</string>
     <string name="manual_m">Manual RPM is turning on in 2s</string>
     <string name="lo_m">Low RPM is turning on in 2s</string>
-    <string name="action_settings">Video Title Here</string>
 
 
 </resources>
