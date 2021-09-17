@@ -1,0 +1,4 @@
+#Wed Sep 23 18:38:40 BDT 2020
+base.0=/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

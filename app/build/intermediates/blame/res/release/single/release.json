@@ -1,0 +1,262 @@
+[
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable-mdpi_ic_baseline_arrow_back_ios_24.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/build/generated/res/pngs/release/drawable-mdpi/ic_baseline_arrow_back_ios_24.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable-xxhdpi_ic_baseline_arrow_back_ios_24.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/build/generated/res/pngs/release/drawable-xxhdpi/ic_baseline_arrow_back_ios_24.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable-v24_backg.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/drawable-v24/backg.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable-anydpi-v21_ic_baseline_home_24.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/build/generated/res/pngs/release/drawable-anydpi-v21/ic_baseline_home_24.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/font_carter_one.ttf.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/font/carter_one.ttf"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable-v24_splash.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/drawable-v24/splash.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/build/generated/res/pngs/release/drawable-anydpi-v21/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/layout_activity_addr.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/layout/activity_addr.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable-ldpi_ic_launcher_background.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/build/generated/res/pngs/release/drawable-ldpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable_sos.jpg.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/drawable/sos.jpg"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/layout_activity_admin_login.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/layout/activity_admin_login.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable-v24_sos.jpg.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/drawable-v24/sos.jpg"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/layout_activity_psi_read.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/layout/activity_psi_read.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable-xhdpi_ic_baseline_arrow_back_ios_24.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/build/generated/res/pngs/release/drawable-xhdpi/ic_baseline_arrow_back_ios_24.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable-xxhdpi_ic_baseline_home_24.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/build/generated/res/pngs/release/drawable-xxhdpi/ic_baseline_home_24.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable-ldpi_ic_baseline_arrow_back_ios_24.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/build/generated/res/pngs/release/drawable-ldpi/ic_baseline_arrow_back_ios_24.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable-anydpi-v21_ic_baseline_arrow_back_ios_24.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/build/generated/res/pngs/release/drawable-anydpi-v21/ic_baseline_arrow_back_ios_24.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable-v24_sos1.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/drawable-v24/sos1.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/build/generated/res/pngs/release/drawable-xxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/layout_activity_rpm.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/layout/activity_rpm.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/layout_activity_floortofloor.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/layout/activity_floortofloor.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/layout_activity_main.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable-xxxhdpi_ic_baseline_arrow_back_ios_24.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/build/generated/res/pngs/release/drawable-xxxhdpi/ic_baseline_arrow_back_ios_24.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/build/generated/res/pngs/release/drawable-hdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/build/generated/res/pngs/release/drawable-xxxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/font_montserrat_subrayada_bold.ttf.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/font/montserrat_subrayada_bold.ttf"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/layout_activity_splash.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/layout_activity_admin_user.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/layout/activity_admin_user.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/layout_activity_accessories.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/layout/activity_accessories.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/layout_activity_wifi.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/layout/activity_wifi.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/layout_activity_mode.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/layout/activity_mode.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/layout_activity_main2.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/layout/activity_main2.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/layout_activity_accessories_more.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/layout/activity_accessories_more.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/build/generated/res/pngs/release/drawable-xhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable-mdpi_ic_baseline_home_24.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/build/generated/res/pngs/release/drawable-mdpi/ic_baseline_home_24.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable_rounded_corners.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/drawable/rounded_corners.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/layout_activity_main_admin.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/layout/activity_main_admin.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable-xxxhdpi_ic_baseline_home_24.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/build/generated/res/pngs/release/drawable-xxxhdpi/ic_baseline_home_24.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable-hdpi_ic_baseline_arrow_back_ios_24.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/build/generated/res/pngs/release/drawable-hdpi/ic_baseline_arrow_back_ios_24.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/layout_activity_security.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/layout/activity_security.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/layout_activity_gate_open_close.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/layout/activity_gate_open_close.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable-xhdpi_ic_baseline_home_24.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/build/generated/res/pngs/release/drawable-xhdpi/ic_baseline_home_24.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/layout_list_item.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/layout/list_item.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/layout_activity_main3.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/layout/activity_main3.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/layout_activity_supply.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/layout/activity_supply.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/build/generated/res/pngs/release/drawable-mdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/layout_activity_room.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/layout/activity_room.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/layout_activity_sos.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/layout/activity_sos.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable-hdpi_ic_baseline_home_24.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/build/generated/res/pngs/release/drawable-hdpi/ic_baseline_home_24.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/drawable-ldpi_ic_baseline_home_24.png.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/build/generated/res/pngs/release/drawable-ldpi/ic_baseline_home_24.png"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/layout_activity_temp_read.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/layout/activity_temp_read.xml"
+    },
+    {
+        "merged": "/home/smn06/AndroidStudioProjects/HVAC/app/build/intermediates/res/merged/release/layout_activity_user_emergency.xml.flat",
+        "source": "/home/smn06/AndroidStudioProjects/HVAC/app/src/main/res/layout/activity_user_emergency.xml"
+    }
+]
