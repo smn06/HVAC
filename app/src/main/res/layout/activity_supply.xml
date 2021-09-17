@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:id="@+id/log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="340dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:drawableLeft="@drawable/ic_baseline_power_off_24"
+        />
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="360dp"
+        android:padding="10dp"
+        android:layout_marginTop="720dp"
+        android:fontFamily="sans-serif-black"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24"
+        />
+
+    <Button
+        android:background="@drawable/rounded_corners"
+        android:id="@+id/main_power"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="80dp"
+        android:ellipsize="none"
+        android:fontFamily="@font/carter_one"
+        android:padding="15dp"
+        android:text="Main Power"
+        android:textSize="28dp"/>
+<!--        android:background="#FFFFFF"/>-->
+    <Button
+        android:background="@drawable/rounded_corners"
+        android:id="@+id/water"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="80dp"
+        android:ellipsize="none"
+        android:fontFamily="@font/carter_one"
+        android:padding="15dp"
+        android:text="Water Supply"
+        android:textSize="28dp"/>
+<!--        android:background="#FFFFFF"/>-->
+    <Button
+        android:background="@drawable/rounded_corners"
+        android:id="@+id/ambulance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginRight="80dp"
+        android:ellipsize="none"
+        android:fontFamily="@font/carter_one"
+        android:padding="15dp"
+        android:text="Ambulance"
+        android:textSize="28dp"/>
+<!--        android:background="#FFFFFF"/>-->
+    <Button
+        android:background="@drawable/rounded_corners"
+        android:id="@+id/fire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="490dp"
+        android:layout_marginRight="80dp"
+        android:ellipsize="none"
+        android:fontFamily="@font/carter_one"
+        android:padding="15dp"
+        android:text="Fire Brigade"
+        android:textSize="28dp"/>
+<!--        android:background="#FFFFFF"/>-->
+
+
+
+
+
+<!--        android:background="#FFFFFF"/>-->
+</RelativeLayout>

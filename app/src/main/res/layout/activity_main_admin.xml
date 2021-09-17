@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    tools:context=".MainActivity"
+    >
+    <TextView
+        android:id="@+id/log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="340dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:drawableLeft="@drawable/ic_baseline_power_off_24"
+
+        />
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="360dp"
+        android:padding="10dp"
+        android:layout_marginTop="720dp"
+        android:fontFamily="sans-serif-black"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24"
+        />
+
+    <Button
+        android:background="@drawable/rounded_corners"
+        android:id="@+id/havc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginRight="80dp"
+        android:ellipsize="none"
+        android:fontFamily="@font/carter_one"
+        android:padding="11dp"
+        android:text="HAVC              System"
+        android:textSize="26dp"/>
+<!--        android:background="#FFFFFF"/>-->
+    <Button
+        android:background="@drawable/rounded_corners"
+        android:id="@+id/water_supply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginRight="80dp"
+        android:ellipsize="none"
+        android:fontFamily="@font/carter_one"
+        android:padding="11dp"
+        android:text="Water Supply System"
+        android:textSize="26dp"/>
+<!--        android:background="#FFFFFF"/>-->
+    <Button
+        android:background="@drawable/rounded_corners"
+        android:id="@+id/fire_exhaust"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginRight="80dp"
+        android:ellipsize="none"
+        android:fontFamily="@font/carter_one"
+        android:padding="11dp"
+        android:text="Fire Exhaust   System"
+        android:textSize="26dp"/>
+<!--        android:background="#FFFFFF"/>-->
+    <Button
+        android:background="@drawable/rounded_corners"
+        android:id="@+id/security"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginRight="80dp"
+        android:ellipsize="none"
+        android:fontFamily="@font/carter_one"
+        android:padding="11dp"
+        android:text="Security     System"
+        android:textSize="26dp"/>
+<!--        android:background="#FFFFFF"/>-->
+
+
+
+    <Button
+        android:background="@drawable/rounded_corners"
+        android:id="@+id/emergency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="610dp"
+        android:layout_marginRight="80dp"
+        android:ellipsize="none"
+        android:fontFamily="@font/carter_one"
+        android:padding="11dp"
+        android:text="Emergency     System"
+        android:textSize="26dp"/>
+<!--        android:background="#FFFFFF"/>-->
+</RelativeLayout>

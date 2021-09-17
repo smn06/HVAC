@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hvac">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".camera"></activity>
+        <activity android:name=".image" />
+        <activity android:name=".add_device" />
+        <activity android:name=".all_device" />
+        <activity android:name=".person_counter" />
+        <activity android:name=".wifi" />
+        <activity android:name=".user_emergency" />
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".addr" />
+        <activity android:name=".admin_login" />
+        <activity android:name=".admin_user" />
+        <activity android:name=".sos" />
+        <activity android:name=".psi_read" />
+        <activity android:name=".temp_read" />
+        <activity android:name=".floortofloor" />
+        <activity android:name=".accessories_more" />
+        <activity android:name=".accessories" />
+        <activity android:name=".gate_open_close" />
+        <activity android:name=".Main_power_supply" />
+        <activity android:name=".mode" />
+        <activity android:name=".room" />
+        <activity android:name=".supply" />
+        <activity android:name=".security" />
+        <activity android:name=".rpm" />
+        <activity android:name=".main_admin" />
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
